@@ -32,20 +32,12 @@ fi
 
 #LIST CREATED BUCKET
 sleep 1
+figlet list bucket
 aws s3 ls
 
 #DELETE BUCKET
-# sleep 1
-# echo "Deleting Bucket"
-# aws s3 rb "s3://${bucket_name}"
+sleep 1
+figlet "Deleting Bucket"
+aws s3 rb "s3://${bucket_name}"
 
-#LOGICAL APPROACH TO DELETE BUCKET
-read -p "Do you wish to delete ${bucket_name} bucket? " reponse
-
-if [[ "${response}" = "yes" ]];
-then
-    sleep 1
-    echo "Deleting Bucket"
-    aws s3 rb "s3://${bucket_name}"
-fi
 
