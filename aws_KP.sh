@@ -43,9 +43,3 @@ echo "${MyKeyPair} deleted successfully!"
 
 sleep 1
 figlet 'Thank you'
-
-#CREATE SECURITY GROUP 
-
-
-# #DESCRIBE REGION NAMES
-# aws ec2 describe-regions --query "Regions"[*]."RegionName"
